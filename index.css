@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* font-family: "Red Hat Display", sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    font-size: 16px;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content {
+    padding: 22px 52px;
+    text-align: center;
+}
+
+.title {
+    color: hsl(223, 47%, 23%);
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 20px;
+
+}
+
+.description {
+    color: #2f508b;
+}
+
+.plan-box {
+    border-radius: 12px;
+    width: 80%;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.plan-box-left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-align: left;
+}
+
+.price h5 {
+    color: hsl(223, 47%, 23%);
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.price p {
+    color: #2f508b;
+}
+
+.annual-plan {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+button {
+    margin-top: 30px;
+    color: #fff;
+    background-color: hsl(245, 75%, 52%);
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 0;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: hsl(256, 69%, 57%);
+}
+
+.plan-box a {
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.plan-box a:hover {
+    text-decoration: none;
+    color: hsl(256, 69%, 57%);
+}
+
+.cancel-order {
+    text-decoration: none;
+    font-weight: 700;
+    margin: 25px 0 35px 0;
+    color: hsl(224, 23%, 55%);
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.cancel-order:hover {
+    color: #000;
+}
+
+@media (max-width: 425px) {
+
+    body {
+        background-image: url('./images/pattern-background-mobile.svg');
+    }
+
+    .container {
+        max-width: 87%;
+    }
+
+    .title {
+        font-size: 23px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+
+    .plan-box a {
+        font-size: 13px;
+    }
+
+    .cancel-order {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .plan-box {
+        padding: 16px;
+    }
+
+    .price h5 {
+        font-size: 12px;
+    }
+
+    .price p {
+        font-size: 13px;
+    }
+
+    .plan-box a {
+        font-size: 12px;
+    }
+
+
+    button {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 12px 0;
+    }
+
+}
